@@ -1,4 +1,4 @@
-const CACHE_NAME = 'arukitabi-cache-v3';
+const CACHE_NAME = 'arukitabi-cache-v4';
 const CACHE_FILES = [
   './',
   './index.html',
