@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f4f2eb" />
-  <title>健康歩旅 | 今日の一歩を、旅の距離に。</title>
+  <title>歩旅 | 今日の一歩を、旅の距離に。</title>
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="preconnect" href="https://tile.openstreetmap.org" />
   <link rel="stylesheet" href="style.css" />
@@ -13,13 +13,19 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
-  />
+  /><link rel="manifest" href="./manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+   navigator.serviceWorker.register('./service-worker.js');
+  }
+</script>
+
 </head>
 <body>
   <header class="app-header">
-    <a class="brand" href="#home" aria-label="健康歩旅 ホーム">
+    <a class="brand" href="#home" aria-label="歩旅 ホーム">
       <span class="brand-mark" aria-hidden="true">歩</span>
-      <span class="brand-name">健康歩旅</span>
+      <span class="brand-name">歩旅</span>
     </a>
     <nav class="nav-tabs" aria-label="メインメニュー">
       <button type="button" data-screen="home" class="nav-btn active" aria-current="page">ホーム</button>
@@ -187,7 +193,7 @@
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
   </main>
 
-  <footer class="app-footer"><span>健康歩旅</span><span>一歩ずつ、遠くまで。</span></footer>
+  <footer class="app-footer"><span>歩旅</span><span>一歩ずつ、遠くまで。</span></footer>
 
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

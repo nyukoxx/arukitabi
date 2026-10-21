@@ -23,7 +23,14 @@
 
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(rgba(248, 248, 250, 0.56), rgba(248, 248, 250, 0.72)),
+    url("./img/background_hotabi.png");
+  background-position: center, center;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat;
   color: var(--ink);
   font-family: var(--sans);
   font-size: 15px;
@@ -47,11 +54,11 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   justify-content: space-between;
   gap: 30px;
   border-bottom: 1px solid var(--line);
-  background: var(--white);
+  background: rgba(248, 248, 250, 0.38);
 }
 
 .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); text-decoration: none; white-space: nowrap; }
-.brand-mark { width: 35px; height: 35px; display: grid; place-items: center; border-radius: 50%; background: var(--forest); color: var(--white); font-family: var(--serif); font-size: 19px; }
+.brand-mark { width: 42px; height: 42px; flex: 0 0 42px; display: grid; place-items: center; border-radius: 50%; background: var(--forest); color: var(--white); font-family: var(--serif); font-size: 22px; line-height: 1; }
 .brand-name { font-family: var(--serif); font-size: 20px; font-weight: 700; }
 .nav-tabs { align-self: stretch; display: flex; align-items: stretch; gap: clamp(16px, 3vw, 42px); }
 .nav-btn { position: relative; align-self: center; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted); cursor: pointer; font-size: 14px; transition: background 160ms ease, color 160ms ease, border-color 160ms ease; }
@@ -73,7 +80,7 @@ h2 { margin-bottom: 0; font-size: 20px; line-height: 1.4; }
 .heading-note { max-width: 320px; margin: 0 0 5px; color: var(--muted); font-size: 13px; }
 
 .dashboard-grid { display: grid; grid-template-columns: minmax(260px, 0.92fr) minmax(330px, 1.35fr); gap: 18px; align-items: stretch; }
-.panel { position: relative; padding: 25px 27px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04); }
+.panel { position: relative; padding: 25px 27px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, 0.94); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04); }
 .step-panel { grid-row: span 2; display: flex; flex-direction: column; min-height: 334px; }
 .panel-heading { display: flex; justify-content: space-between; align-items: start; gap: 15px; margin-bottom: 25px; }
 .panel-index { color: #a0a79c; font-family: var(--mono); font-size: 11px; }

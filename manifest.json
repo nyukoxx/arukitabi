@@ -1,0 +1,10 @@
+{
+  "name": "歩旅",
+  "short_name": "歩旅",
+  "start_url": "/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": []
+}
